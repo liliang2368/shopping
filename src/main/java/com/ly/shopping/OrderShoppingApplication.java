@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("com.ly.shopping.dao")
 public class OrderShoppingApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(OrderShoppingApplication.class, args);
 	}
-
 }
