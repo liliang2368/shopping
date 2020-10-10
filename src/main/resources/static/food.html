@@ -14,6 +14,8 @@
 <script type="text/javascript">
 	function add(){
 		//重置表单
+		alert("准备文件上传");
+
 		$('#ff').form('reset');
 		$("#dlg").dialog('open');
 	}
@@ -217,6 +219,7 @@
 			<label>商品图：</label><input name="pic"><br>
 			<label>食品分类：</label>
 		</form>
+
 	</div>
 	<div id="dlg1" class="easyui-dialog" title="菜品详情页面编辑" style="width:400px;height:500px;padding:10px"
 			data-options="
@@ -251,6 +254,7 @@
 	
 		<div id="tb" style="padding:5px;height:auto">
 		<div style="margin-bottom:5px">
+
 			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="add()">新增</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="mod()">修改</a>
 			<a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="del()">删除</a>

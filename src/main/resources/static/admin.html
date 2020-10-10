@@ -12,8 +12,14 @@
 	<script type="text/javascript">
 	function add(){
 		//重置表单
-		$('#ff').form('reset');
-		$("#dlg").dialog('open');
+		alert("准备文件上传");
+		add1();
+
+
+
+
+		// $('#ff').form('reset');
+		// $("#dlg").dialog('open');
 	}
 	function adtail(){
 		//先获取到选中的行
@@ -22,6 +28,12 @@
 			alert("请选择需要需改的商品的详情");
 			return;
 		}
+	}
+	function add1() {
+		$("#myform").submit(
+
+		);
+
 	}
 	function mod(){
 		//获取选中行的row值  row包括菜品的所有字段值
@@ -215,6 +227,14 @@
 	<p style="padding:5px 6px 4px 32px"><span>商品总价</span> <span>收货人</span></p>
 	</div>
 </div>
+
+<form  id="myform" action="http://localhost:8090/shopping/file" method="post"
+	  enctype="multipart/form-data">
+	<input name="fileImage" type="file"  />
+	<input type="button" onclick="add1()"> 提交表单</input>
+
+</form>
+
 
 
 
