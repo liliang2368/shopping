@@ -1,9 +1,12 @@
 package com.ly.shopping.dao.bo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-
-public class Ordershopp {
+@JsonIgnoreProperties(value = {"hibernateLazyInitializer", "handler"})
+public class Ordershopp implements Serializable {
     private Integer orderId;
 
     private Integer goodId;
